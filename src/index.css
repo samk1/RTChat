@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+.rtchat-root-container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.rtchat-app-container {
+  height: 600px;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  background-color: orange;
+  border: 2px solid black;
+}
+
+.rtchat-peer-messages-container {
+  display: flex;
+  flex-grow: 1;
+  margin: 14px;
+}
+
+.rtchat-debug-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: monospace;
+}
+
+.rtchat-input-container {
+  display: flex;
+}
+
+.rtchat-input-container input {
+  width: 100%;
+  height: 20px;
+  padding: 9px;
+}
+
+.rtchat-input-container {
+  margin: 14px;
+}
+
+.peer-message {
+  font-family: monospace;
+  font-size: large;
+}
+
+.peer-message-list {
+  width: 100%;
+}
+
+.peer-message-live .peer-message-message {
+  color: greenyellow;
+}
+
+span.peer-message-username {
+  font-weight: bold;
+}
